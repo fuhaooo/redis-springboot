@@ -1,0 +1,3 @@
+redis-springboot
+redis学习项目，包含redisTemplate和stringRedisTemplate的使用。
+也包含springboot结合mybatis集成mysql和redis实现分布式缓存和ssesion管理，以及redisson实现分布式锁
