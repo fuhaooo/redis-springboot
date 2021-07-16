@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.fuhao.dao.EmpDAO">
+
+    <!--开启mybatis的二级缓存(本地缓存)-->
+<!--    <cache type="com.fuhao.cacahe.RedisCache"/>-->
+    <!--关联关系缓存处理-->
+    <cache-ref namespace="com.fuhao.dao.UserDAO"/>
+
+    <!--save方法-->
+    <insert id="save" parameterType="Emp">
+        insert into t_emp values(#{id},#{name});
+    </insert>
+    <!--update方法-->
+    <update id="update" parameterType="Emp">
+        update t_emp
+        set name=#{name},age=#{age}
+        where id=#{id}
+    </update>
+    <!--findALL查询方法-->
+    <select id="findAll" resultType="com.fuhao.entity.Emp">
+        select id,name from t_emp;
+    </select>
+    <!--findById方法-->
+    <select id="findById" resultType="com.fuhao.entity.Emp">
+        select id,name from t_emp where id =#{id};
+    </select>
+    <!--delete方法-->
+    <delete id="delete" parameterType="String">
+        delete from t_emp where id = #{id};
+    </delete>
+
+</mapper>

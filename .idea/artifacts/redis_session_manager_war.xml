@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="redis_session_manager:war">
+    <output-path>$PROJECT_DIR$/redis_session_manager/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>redis_session_manager</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="redis_session_manager-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="redis_session_manager:war exploded" />
+    </root>
+  </artifact>
+</component>

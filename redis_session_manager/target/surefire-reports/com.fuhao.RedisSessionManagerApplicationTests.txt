@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.fuhao.RedisSessionManagerApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.407 s - in com.fuhao.RedisSessionManagerApplicationTests
